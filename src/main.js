@@ -41,8 +41,10 @@ router.beforeEach((to, from, next) => {
     const api = `${process.env.VUE_APP_APIPATH}/api/user/check`
     axios.post(api).then((response) => {
       if (response.data.success) {
+        console.log('驗證通過')
         next()
       } else {
+        console.log('驗證失敗')
         next({
           path: './login'
         })
