@@ -6,7 +6,7 @@
           <h3 class="text-center">查詢我的訂單</h3>
           <div class="mx-auto order_search">
             <input class="border border-dark mr-2" type="text" v-model="isEmail" placeholder="請輸入您的E-mail" @keydown.enter="getOrder">
-            <button class="btn btn-dark btn-sm" @click="getOrder">查詢</button>
+            <button class="btn btn-dark btn-sm" style="margin-top: -5px" @click="getOrder">查詢</button>
           </div>
           <div class="cart-table mt-4 p-3" v-for=" (item, key) in orderFilter" :key="item.id">
             <div v-if="orderFilter.length !== 0">
