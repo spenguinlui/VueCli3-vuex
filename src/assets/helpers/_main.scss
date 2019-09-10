@@ -1,0 +1,186 @@
+//products
+$iconw: 48px;
+.product_card {
+    position: relative;
+    .card_tag {
+        position: absolute;
+        top: -8px;
+        left: 30px;
+        width: 4em;
+        text-align: center;
+        background: $black;
+        color: $light;
+    }
+    .card_image {
+        cursor: pointer;
+        &:hover{
+            background: #00000080;
+        }
+    }
+    .card-title {
+        a{
+            color: $black
+        }
+    }
+    .product_card_icon {
+        border-radius: 50%;
+        cursor: pointer;
+        width: $iconw;
+        height: $iconw;
+        line-height: $iconw;
+        text-align: center;
+        color: $light;
+        &.more{
+            background: $secondary;
+            &:hover{
+                background: #383d41;
+            }
+        }
+        &.cart{
+            background: $danger;
+            font-size: 20px;
+            &:hover{
+                background: #720404;
+            }
+        }
+    }
+    .stock {
+        font-size: 18px;
+        line-height: $iconw;
+    }
+}
+//products_page
+.category {
+    width: 4em;
+}
+.product_pageImage {
+    border: 10px solid $white;
+    box-shadow: 3px 5px 10px #00000080;
+}
+.product_pagePrepage {
+    cursor: pointer;
+    font-size: 30px;
+    color: $black;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+//cart
+$cpw: 50px;
+$cmw: 25px;
+@media screen and (max-width: 768px) {
+}
+$color: $gray-500;
+$active-color: $dark;
+.cart-table {
+    thead th {
+        vertical-align: middle;
+    }
+    border: 2px solid $dark;
+    box-shadow: 15px 15px $gray-700;
+}
+.cart-progress-sign {
+    width: $cpw;
+    height: $cpw;
+    background: $color;
+    border-radius: 50%;
+    i {
+        color: $white;
+        font-size: $cpw * .6;
+        line-height: $cpw;
+        width: $cpw;
+        height: $cpw;
+        text-align: center;
+    }
+    &.active {
+    background: $active-color;
+    }
+    &.haspaid {
+        background: $success;
+    }
+}
+.cart-progress-line {
+    margin: 0 5px;
+    color: $color;
+    text-align: center;
+    margin-bottom: $cpw / 2; 
+    border-bottom: 2px solid $color;
+    &.active {
+        color: $active-color;
+        border-bottom: 2px solid $active-color;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cart-progress {
+        font-size: 14px;
+    }
+    .cart-progress-sign{
+        width: $cmw;
+        height: $cmw;
+        i {
+            font-size: $cmw * .6;
+            line-height: $cmw;
+            width: $cmw;
+            height: $cmw;
+        }
+    }
+    .cart-progress-line {
+        margin-bottom: $cmw / 2; 
+    }
+}
+@media screen and (max-width: 404px) {
+    .cart-progress {
+        visibility: hidden;
+    }
+}
+//orders
+.order_search {
+    width: 260px;
+}
+//cotact
+.cotact {
+    height: 600px;
+    @media screen and (min-height: 600px) {
+        height: 100vh;
+    }
+    background-position: center -30px;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,100%,0.70);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    .icon {
+        border-radius: 50%;
+        cursor: pointer;
+        width: $iconw;
+        height: $iconw;
+        line-height: $iconw;
+        text-align: center;
+        background: $light;
+        &:hover {
+            background: $dark;
+            color: $light;
+        }
+    }
+}
+//cotact_updata
+.updata_icon {
+    font-size: 20px;
+    border-radius: 50%;
+        cursor: pointer;
+        width: $iconw;
+        height: $iconw;
+        line-height: $iconw;
+        text-align: center;
+        background: #495057;
+        color: $light;
+        &:hover {
+            background: $black;
+        }
+}

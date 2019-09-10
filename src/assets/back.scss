@@ -1,0 +1,7 @@
+@import "~bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./helpers/dashboard";
+
+
+//小心放的順序，先variables再bootstrap，外觀才能先吃到變數才套用
