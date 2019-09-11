@@ -7,7 +7,7 @@ export default new Router({
   linkExactActiveClass: 'active',
   linkActiveClass: 'active',
   // mode: 'history',
-  // base: process.env.PUBLIC_PATH,
+  base: process.env.PUBLIC_PATH,
   routes: [
     {
       path: '*',
