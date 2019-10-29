@@ -175,7 +175,7 @@ $indexbg: #33333380;
 }
 //game
 .modal {
-    overflow:visible;
+    overflow: auto !important;
     .game-text {
         font-size: 12px;
     }
